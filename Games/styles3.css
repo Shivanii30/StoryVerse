@@ -1,0 +1,82 @@
+/* styles.css */
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #333; /* dark grey */
+  }
+  
+  .road {
+    background-image: url('road.png');
+    background-size: cover;
+    width: 350px;
+    height: 700px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .car {
+    background-image: url('car.png');
+    background-size: cover;
+    width: 80px;
+    height: 160px;
+    position: absolute;
+    bottom: 20px;
+    left: 110px;
+    /* animation: car-animation 0.5s infinite alternate; */
+  }
+  
+  .obstacle {
+    background-image: url('obstacle.png');
+    background-size: cover;
+    margin-left: 30px;
+    width: 65px;
+    height: 150px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    /* animation: obstacle-animation 2s infinite linear; */
+  }
+  
+  @keyframes car-animation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
+  }
+  
+  @keyframes obstacle-animation {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(550px); }
+  }
+  
+  #game-over {
+    display: none;
+    color: red;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #ff7f00; /* orange */
+    color: #fff; /* white */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-family: 'Comic Sans MS', cursive; /* Use a playful font */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); /* Add text shadow for effect */
+  }
+  
+  button:hover {
+    background-color: #ffaa00; /* lighter orange */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  

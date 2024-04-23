@@ -1,0 +1,85 @@
+/* style_audio.css */
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Navigation Bar */
+header {
+    background-color: #ff7f50; /* Coral background */
+    padding: 15px 20px; /* Add padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: sticky; /* Make the navbar sticky */
+    top: 0;
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+nav .nav-link {
+    color: white; /* White text */
+    padding: 10px 15px; /* Add padding to links */
+    border-radius: 20px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
+    font-weight: bold; /* Make text bold */
+    font-size: 1.1rem; /* Increase font size */
+}
+
+nav .nav-link:hover, nav .nav-link.active {
+    background-color: #ffd700; /* Gold background on hover */
+    color: black; /* Change text color on hover */
+}
+
+nav .nav-link.active {
+    border-bottom: 3px solid white; /* Underline active link */
+}
+
+/* Logo Styling */
+header a {
+    color: white; /* White text for logo */
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    text-decoration: none;
+    display: flex; /* Display as flex for proper alignment */
+    align-items: center; /* Align items in center */
+}
+
+header a svg {
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+
+/* Album Section */
+.album {
+    padding: 20px;
+}
+
+.album .card {
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.album .card:hover {
+    transform: scale(1.05); /* Scale card slightly on hover */
+}
+
+.album .card video {
+    border-radius: 15px 15px 0 0; /* Rounded corners for video */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.album .card-body {
+    background-color: #fff; /* White background */
+    border-radius: 0 0 15px 15px; /* Rounded corners */
+    padding: 10px;
+    text-align: center;
+}
+
+.album .card-body p {
+    color: #333;
+}
+
+/* Customize the title */
+h1 {
+    color: #ff69b4; /* Hot pink color */
+}

@@ -1,0 +1,40 @@
+/* styles.css */
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #333; /* dark grey */
+  }
+  
+  canvas {
+    border: 2px solid #333; /* dark grey */
+  }
+  
+  input[type="color"],
+  input[type="range"],
+  button {
+    margin: 5px;
+  }
+  
+  button {
+    background-color: #ff7f00; /* orange */
+    color: #fff; /* white */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ffaa00; /* lighter orange */
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
